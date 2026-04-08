@@ -1,4 +1,4 @@
-
+/*
 import { tokenAPI } from "./index-script.js"
 
 const products = [
@@ -261,3 +261,4 @@ products.forEach( async product =>{
     }
 })
 
+*/
