@@ -55,6 +55,7 @@ const showProducts = (products) =>{
         const imgProduct = document.createElement("img")
         const titleProduct = document.createElement("h2")
         const descriptionProduct = document.createElement("p")
+        const priceProduct = document.createElement("p")
 
 
 
@@ -64,9 +65,10 @@ const showProducts = (products) =>{
         imgProduct.setAttribute("class", "img-thumbnail")
         titleProduct.innerText = product.name
         descriptionProduct.innerText = product.description
+        priceProduct.innerText = product.price + " €"
 
         imgContainer.appendChild(imgProduct)
-        containerProduct.append(imgContainer, titleProduct, descriptionProduct)
+        containerProduct.append(imgContainer, titleProduct, descriptionProduct, priceProduct)
         productsRow.appendChild(containerProduct)
     });
 

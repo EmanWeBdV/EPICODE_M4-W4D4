@@ -1,13 +1,31 @@
+.allProducts {
+  margin-top: 2rem;
+}
+
+.rowProducts {
+  gap: 2rem 1rem;
+}
+
+.singleProductContainer {
+  width: 30%;
+  border: 1px solid red;
+  padding: 3rem;
+}
+
 .containerImgProduct {
-  width: 70%;
-  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60%;
   overflow: hidden;
 }
 
 .containerImgProduct img {
   object-fit: cover;
-  width: 100%;
+  width: 40%;
   height: auto;
+  border: none;
 }
 
 .rowProducts h2 {
