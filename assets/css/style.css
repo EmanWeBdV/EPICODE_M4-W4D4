@@ -13,7 +13,7 @@
   width: 30%;
   height: 37rem;
   padding: 3rem;
-  box-shadow: 1px 5px 9px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(208, 208, 208);
   border-radius: 1rem;
 }
 
@@ -21,6 +21,13 @@
   padding: 0.7rem 1rem;
   border-radius: 2rem;
   border: none;
+  background-color: #3868e8;
+  color: white;
+}
+
+.singleProductContainer button:hover {
+  transition: background-color 0.1s ease-in-out;
+  background-color: #2955cd;
 }
 
 .containerImgProduct {
@@ -41,4 +48,13 @@
 
 .rowProducts h2 {
   font-size: 1.3rem;
+}
+
+.bodyCard p:first-of-type {
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(208, 208, 208);
+  width: fit-content;
+  background-color: rgb(234, 234, 234);
+  color: rgb(84, 83, 83);
 }
