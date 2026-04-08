@@ -1,12 +1,15 @@
 // Strive School Token API : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWQ1NDM3NGJhMGYxMjAwMTUyZTc3NmIiLCJpYXQiOjE3NzU1ODQxMTYsImV4cCI6MTc3Njc5MzcxNn0.IJzM3lyFfQC9wLFlzv2bE1mbyIVPGWi7N4shdrUZE5w
-export const productApiUrl = "https://striveschool-api.herokuapp.com/api/product/"
+// Link to fetch API:  https://striveschool-api.herokuapp.com/api/product/
+
 export const tokenAPI = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWQ1NDM3NGJhMGYxMjAwMTUyZTc3NmIiLCJpYXQiOjE3NzU1ODQxMTYsImV4cCI6MTc3Njc5MzcxNn0.IJzM3lyFfQC9wLFlzv2bE1mbyIVPGWi7N4shdrUZE5w"
 
+const productsContainer = document.querySelector(".allProducts")
+const productsRow = document.querySelector(".rowProducts")
 
 
 const createProduct = async () => {
         try {
-        const response = await fetch(productApiUrl, {
+        const response = await fetch(`https://striveschool-api.herokuapp.com/api/product/`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -26,7 +29,7 @@ const createProduct = async () => {
 
 const getProducts = async () =>{
     try {
-        const response = await fetch(productApiUrl, {
+        const response = await fetch(`https://striveschool-api.herokuapp.com/api/product/`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -62,6 +65,7 @@ const showProducts = (products) =>{
 
 
 }
+
 
 
 
