@@ -53,6 +53,7 @@ const showProducts = (products) =>{
         const containerProduct = document.createElement("div")
         const imgContainer = document.createElement("div")
         const imgProduct = document.createElement("img")
+        const bodyProductCard = document.createElement("div")
         const brandProduct = document.createElement("p")
         const titleProduct = document.createElement("h2")
         const descriptionProduct = document.createElement("p")
@@ -61,6 +62,7 @@ const showProducts = (products) =>{
 
 
 
+        bodyProductCard.classList.add("bodyCard")
         containerProduct.setAttribute("class", "col-12 col-md-4 singleProductContainer")
         imgContainer.classList.add("containerImgProduct")
         imgProduct.setAttribute("src", product.imageUrl)
@@ -72,8 +74,9 @@ const showProducts = (products) =>{
         priceProduct.innerText = product.price + " €"
         buttonProductPage.innerText = "Dettagli Prodotto"
 
+        bodyProductCard.append(brandProduct, titleProduct, descriptionProduct, priceProduct)
         imgContainer.appendChild(imgProduct)
-        containerProduct.append(imgContainer, brandProduct, titleProduct, descriptionProduct, priceProduct, buttonProductPage)
+        containerProduct.append(imgContainer, bodyProductCard, buttonProductPage)
         productsRow.appendChild(containerProduct)
     });
 

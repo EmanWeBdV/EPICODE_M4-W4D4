@@ -7,11 +7,20 @@
 }
 
 .singleProductContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   width: 30%;
   height: 37rem;
   padding: 3rem;
-  box-shadow: 1px 1px 9px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 5px 9px 3px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
+}
+
+.singleProductContainer button {
+  padding: 0.7rem 1rem;
+  border-radius: 2rem;
+  border: none;
 }
 
 .containerImgProduct {
@@ -25,7 +34,7 @@
 
 .containerImgProduct img {
   object-fit: cover;
-  width: 60%;
+  width: 40%;
   height: auto;
   border: none;
 }
