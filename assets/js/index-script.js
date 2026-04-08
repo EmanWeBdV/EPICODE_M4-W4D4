@@ -39,7 +39,7 @@ const getProducts = async () =>{
         const data = await response.json()
         console.log(response)
         console.log(data)
-        await showProducts(data)
+        showProducts(data)
         
     } catch (error) {
         console.error(error)
@@ -57,6 +57,7 @@ const showProducts = (products) =>{
         const titleProduct = document.createElement("h2")
         const descriptionProduct = document.createElement("p")
         const priceProduct = document.createElement("p")
+        const buttonProductPage = document.createElement("button")
 
 
 
@@ -69,9 +70,10 @@ const showProducts = (products) =>{
         titleProduct.innerText = product.name
         descriptionProduct.innerText = product.description
         priceProduct.innerText = product.price + " €"
+        buttonProductPage.innerText = "Dettagli Prodotto"
 
         imgContainer.appendChild(imgProduct)
-        containerProduct.append(imgContainer, brandProduct, titleProduct, descriptionProduct, priceProduct)
+        containerProduct.append(imgContainer, brandProduct, titleProduct, descriptionProduct, priceProduct, buttonProductPage)
         productsRow.appendChild(containerProduct)
     });
 

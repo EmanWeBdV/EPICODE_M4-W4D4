@@ -8,6 +8,7 @@
 
 .singleProductContainer {
   width: 30%;
+  height: 37rem;
   padding: 3rem;
   box-shadow: 1px 1px 9px 3px rgba(0, 0, 0, 0.15);
   border-radius: 1rem;
@@ -24,7 +25,7 @@
 
 .containerImgProduct img {
   object-fit: cover;
-  width: 40%;
+  width: 60%;
   height: auto;
   border: none;
 }
