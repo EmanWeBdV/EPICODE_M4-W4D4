@@ -53,6 +53,7 @@ const showProducts = (products) =>{
         const containerProduct = document.createElement("div")
         const imgContainer = document.createElement("div")
         const imgProduct = document.createElement("img")
+        const brandProduct = document.createElement("p")
         const titleProduct = document.createElement("h2")
         const descriptionProduct = document.createElement("p")
         const priceProduct = document.createElement("p")
@@ -63,12 +64,14 @@ const showProducts = (products) =>{
         imgContainer.classList.add("containerImgProduct")
         imgProduct.setAttribute("src", product.imageUrl)
         imgProduct.setAttribute("class", "img-thumbnail")
+        imgProduct.setAttribute("draggable", false)
+        brandProduct.innerText = product.brand
         titleProduct.innerText = product.name
         descriptionProduct.innerText = product.description
         priceProduct.innerText = product.price + " €"
 
         imgContainer.appendChild(imgProduct)
-        containerProduct.append(imgContainer, titleProduct, descriptionProduct, priceProduct)
+        containerProduct.append(imgContainer, brandProduct, titleProduct, descriptionProduct, priceProduct)
         productsRow.appendChild(containerProduct)
     });
 
