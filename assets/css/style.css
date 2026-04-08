@@ -1,0 +1,15 @@
+.containerImgProduct {
+  width: 70%;
+  height: 30%;
+  overflow: hidden;
+}
+
+.containerImgProduct img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.rowProducts h2 {
+  font-size: 1.3rem;
+}

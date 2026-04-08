@@ -39,6 +39,7 @@ const getProducts = async () =>{
         const data = await response.json()
         console.log(response)
         console.log(data)
+        await showProducts(data)
         
     } catch (error) {
         console.error(error)
@@ -50,15 +51,23 @@ getProducts()
 const showProducts = (products) =>{
     products.forEach(product => {
         const containerProduct = document.createElement("div")
+        const imgContainer = document.createElement("div")
         const imgProduct = document.createElement("img")
         const titleProduct = document.createElement("h2")
         const descriptionProduct = document.createElement("p")
 
+
+
+        containerProduct.setAttribute("class", "col-12 col-md-4 singleProductContainer")
+        imgContainer.classList.add("containerImgProduct")
         imgProduct.setAttribute("src", product.imageUrl)
+        imgProduct.setAttribute("class", "img-thumbnail")
         titleProduct.innerText = product.name
         descriptionProduct.innerText = product.description
 
-        containerProduct.append(imgProduct, titleProduct, descriptionProduct)
+        imgContainer.appendChild(imgProduct)
+        containerProduct.append(imgContainer, titleProduct, descriptionProduct)
+        productsRow.appendChild(containerProduct)
     });
 
 

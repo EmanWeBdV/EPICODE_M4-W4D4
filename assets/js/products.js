@@ -1,4 +1,4 @@
-/* 
+
 import { tokenAPI } from "./index-script.js"
 
 const products = [
@@ -6,218 +6,218 @@ const products = [
     name: "iPhone 13",
     description: "Smartphone Apple con ottime prestazioni e fotocamera avanzata.",
     brand: "Apple",
-    imageUrl: "https://images.unsplash.com/photo-1632661674596-df8be070a5c5",
+    imageUrl: "./assets/img/apple-iphone-13_converted.webp",
     price: 899
   },
   {
     name: "Galaxy S23",
     description: "Smartphone Samsung di fascia alta con display AMOLED brillante.",
     brand: "Samsung",
-    imageUrl: "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf",
+    imageUrl: "./assets/img/samsung-galaxy-s23_converted.webp",
     price: 849
   },
   {
     name: "Redmi Note 13",
     description: "Telefono Android affidabile con buona autonomia e ottimo prezzo.",
     brand: "Xiaomi",
-    imageUrl: "https://images.unsplash.com/photo-1598327105666-5b89351aff97",
+    imageUrl: "./assets/img/redmi-note-13_converted.webp",
     price: 299
   },
   {
     name: "Pixel 8",
     description: "Smartphone Google con esperienza Android pulita e fotocamera eccellente.",
     brand: "Google",
-    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab",
+    imageUrl: "./assets/img/google-pixel-8_converted.webp",
     price: 799
   },
   {
     name: "Moto G84",
     description: "Dispositivo pratico e veloce, ideale per l'uso quotidiano.",
     brand: "Motorola",
-    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+    imageUrl: "./assets/img/motorola-moto-g84_converted.webp",
     price: 279
   },
   {
     name: "Nokia XR21",
     description: "Smartphone resistente pensato per durare nel tempo.",
     brand: "Nokia",
-    imageUrl: "https://images.unsplash.com/photo-1580910051074-3eb694886505",
+    imageUrl: "./assets/img/nokia-xr21_converted.webp",
     price: 499
   },
   {
     name: "OnePlus 12",
     description: "Telefono premium con ricarica rapida e performance elevate.",
     brand: "OnePlus",
-    imageUrl: "https://images.unsplash.com/photo-1585060544812-6b45742d762f",
+    imageUrl: "./assets/img/oneplus-12_converted.webp",
     price: 949
   },
   {
     name: "Realme 12 Pro",
     description: "Smartphone elegante con ottimo comparto fotografico.",
     brand: "Realme",
-    imageUrl: "https://images.unsplash.com/photo-1567581935884-3349723552ca",
+    imageUrl: "./assets/img/realme-12-pro_converted.webp",
     price: 399
   },
   {
     name: "Sony Xperia 5 V",
     description: "Telefono compatto e potente con display di alta qualità.",
     brand: "Sony",
-    imageUrl: "https://images.unsplash.com/photo-1545239351-1141bd82e8a6",
+    imageUrl: "./assets/img/sony-xperia-5-v_converted.webp",
     price: 999
   },
   {
     name: "Huawei P60",
     description: "Smartphone dal design raffinato con ottima fotocamera.",
     brand: "Huawei",
-    imageUrl: "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2",
+    imageUrl: "./assets/img/huawei-p60_converted.webp",
     price: 699
   },
   {
     name: "MacBook Air M2",
     description: "Laptop leggero e potente, ideale per studio e lavoro.",
     brand: "Apple",
-    imageUrl: "https://images.unsplash.com/photo-1517336714739-489689fd1ca8",
+    imageUrl: "./assets/img/apple-macbook-air-2_converted.webp",
     price: 1299
   },
   {
     name: "Galaxy Book3",
     description: "Notebook Samsung sottile e moderno per produttività quotidiana.",
     brand: "Samsung",
-    imageUrl: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+    imageUrl: "./assets/img/samsung-galaxy-book-3_converted.webp",
     price: 1099
   },
   {
     name: "ThinkPad X1 Carbon",
     description: "Laptop professionale robusto e affidabile.",
     brand: "Lenovo",
-    imageUrl: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+    imageUrl: "./assets/img/lenovo-thinkpad-x1-carbon_converted.webp",
     price: 1599
   },
   {
     name: "Dell XPS 13",
     description: "Ultrabook compatto con design premium e ottimo display.",
     brand: "Dell",
-    imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    imageUrl: "./assets/img/dell-xps-13_converted.webp",
     price: 1399
   },
   {
     name: "HP Spectre x360",
     description: "Portatile convertibile elegante e versatile.",
     brand: "HP",
-    imageUrl: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
+    imageUrl: "./assets/img/hp-spectre-x360_converted.webp",
     price: 1499
   },
   {
     name: "iPad Air",
     description: "Tablet Apple potente e leggero per intrattenimento e lavoro.",
     brand: "Apple",
-    imageUrl: "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0",
+    imageUrl: "./assets/img/ipad-air_converted.webp",
     price: 749
   },
   {
     name: "Galaxy Tab S9",
     description: "Tablet Android di fascia alta con schermo luminoso e fluido.",
     brand: "Samsung",
-    imageUrl: "https://images.unsplash.com/photo-1589739900243-4b52cd9ddc36",
+    imageUrl: "./assets/img/samsung-galaxy-tab-s9_converted.webp",
     price: 899
   },
   {
     name: "Xiaomi Pad 6",
     description: "Tablet equilibrato con prestazioni solide e buon prezzo.",
     brand: "Xiaomi",
-    imageUrl: "https://images.unsplash.com/photo-1561154464-82e9adf32764",
+    imageUrl: "./assets/img/xiaomi-pad-6_converted.webp",
     price: 399
   },
   {
     name: "AirPods Pro",
     description: "Auricolari wireless con cancellazione del rumore.",
     brand: "Apple",
-    imageUrl: "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f37",
+    imageUrl: "./assets/img/apple-airpods-pro_converted.webp",
     price: 279
   },
   {
     name: "Galaxy Buds2 Pro",
     description: "Auricolari Samsung comodi e con suono immersivo.",
     brand: "Samsung",
-    imageUrl: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df",
+    imageUrl: "./assets/img/samsung-galaxy-buds2-pro_converted.webp",
     price: 229
   },
   {
     name: "WH-1000XM5",
     description: "Cuffie Sony over-ear con eccellente cancellazione del rumore.",
     brand: "Sony",
-    imageUrl: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+    imageUrl: "./assets/img/sony-wh-1000xm5_converted.webp",
     price: 419
   },
   {
     name: "JBL Charge 5",
     description: "Speaker Bluetooth portatile con audio potente e batteria duratura.",
     brand: "JBL",
-    imageUrl: "https://images.unsplash.com/photo-1589003077984-894e133dabab",
+    imageUrl: "./assets/img/jbl-charge-5_converted.webp",
     price: 179
   },
   {
     name: "GoPro Hero 12",
     description: "Action cam compatta perfetta per video dinamici e avventure.",
     brand: "GoPro",
-    imageUrl: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f",
+    imageUrl: "./assets/img/gopro-hero-12_converted.webp",
     price: 449
   },
   {
     name: "Canon EOS R50",
     description: "Fotocamera mirrorless intuitiva e versatile.",
     brand: "Canon",
-    imageUrl: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32",
+    imageUrl: "./assets/img/canon-eos-r50_converted.webp",
     price: 979
   },
   {
     name: "Kindle Paperwhite",
     description: "E-reader leggero con schermo antiriflesso e lunga autonomia.",
     brand: "Amazon",
-    imageUrl: "https://images.unsplash.com/photo-1544717305-2782549b5136",
+    imageUrl: "./assets/img/amazon-kindle-paperwhite_converted.webp",
     price: 169
   },
   {
     name: "Apple Watch Series 9",
     description: "Smartwatch completo per notifiche, salute e attività fisica.",
     brand: "Apple",
-    imageUrl: "https://images.unsplash.com/photo-1579586337278-3f436f25d4d6",
+    imageUrl: "./assets/img/apple-watch-serie-9_converted.webp",
     price: 459
   },
   {
     name: "Galaxy Watch 6",
     description: "Orologio smart Samsung con funzioni fitness e design moderno.",
     brand: "Samsung",
-    imageUrl: "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+    imageUrl: "./assets/img/samsung-galaxy-watch-6_converted.webp",
     price: 329
   },
   {
     name: "Nintendo Switch OLED",
     description: "Console ibrida perfetta per giocare a casa e in mobilità.",
     brand: "Nintendo",
-    imageUrl: "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3",
+    imageUrl: "./assets/img/nintendo-switch-oled_converted.webp",
     price: 349
   },
   {
     name: "PlayStation 5",
     description: "Console Sony di nuova generazione con grafica avanzata.",
     brand: "Sony",
-    imageUrl: "https://images.unsplash.com/photo-1606813907291-d86efa9b94db",
+    imageUrl: "./assets/img/sony-playstation-5_converted.webp",
     price: 549
   },
   {
     name: "Xbox Series X",
     description: "Console Microsoft potente e veloce per gaming ad alte prestazioni.",
     brand: "Microsoft",
-    imageUrl: "https://images.unsplash.com/photo-1621259182978-fbf93132d53d",
+    imageUrl: "./assets/img/microsoft-xbox-serie-x_converted.webp",
     price: 549
   }
 ]
 
 products.forEach( async product =>{
     try {
-        await fetch(`https://striveschool-api.herokuapp.com/api/product/`, {
-            method: "POST",
+        await fetch(`https://striveschool-api.herokuapp.com/api/product/${product._id}`, {
+            method: "PATCH",
             headers: {
                 "Content-Type": "application/json",
                 "Authorization": tokenAPI,
@@ -229,4 +229,3 @@ products.forEach( async product =>{
         console.error(error)
     }
 })
-*/
