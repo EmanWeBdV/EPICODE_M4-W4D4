@@ -1,4 +1,4 @@
-/*
+
 import { tokenAPI } from "./index-script.js"
 
 const products = [
@@ -244,21 +244,29 @@ const products = [
   }
 ]
 
-products.forEach( async product =>{
-    try {
-        await fetch(`https://striveschool-api.herokuapp.com/api/product/${product._id}`, {
-            method: "PUT",
-            headers: {
-                "Content-Type": "application/json",
-                "Authorization": tokenAPI,
-            },
-            body: JSON.stringify({
-                imageUrl: product.imageUrl
-            })
-    })
-    } catch (error) {
-        console.error(error)
-    }
-})
+const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms))
 
-*/
+const checkProduct = async (products) => {
+  for (const product of products) {
+    try {
+      const response = await fetch(`https://striveschool-api.herokuapp.com/api/product/${product._id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": tokenAPI,
+        },
+        body: JSON.stringify(product)
+      })
+
+      const data = await response.json()
+
+
+
+      await wait(1000)
+    } catch (error) {
+      console.error(`Errore su ${product.name}:`, error)
+    }
+  }
+}
+
+checkProduct(products)

@@ -7,26 +7,6 @@ const productsContainer = document.querySelector(".allProducts")
 const productsRow = document.querySelector(".rowProducts")
 
 
-const createProduct = async () => {
-        try {
-        const response = await fetch(`https://striveschool-api.herokuapp.com/api/product/`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "Authorization": tokenAPI,
-            },
-            body: JSON.stringify()
-        })
-        const data = await response.json()
-        console.log(response)
-        console.log(data)
-        
-    } catch (error) {
-        console.error(error)
-    }
-}
-
-
 const getProducts = async () =>{
     try {
         const response = await fetch(`https://striveschool-api.herokuapp.com/api/product/`, {
@@ -39,7 +19,7 @@ const getProducts = async () =>{
         const data = await response.json()
         console.log(response)
         console.log(data)
-        showProducts(data)
+        generateCardProduct(data)
         
     } catch (error) {
         console.error(error)
@@ -48,9 +28,10 @@ const getProducts = async () =>{
 getProducts()
 
 
-const showProducts = (products) =>{
+const generateCardProduct = (products) =>{
     products.forEach(product => {
         const containerProduct = document.createElement("div")
+        const cardContainerProduct = document.createElement("div")
         const imgContainer = document.createElement("div")
         const imgProduct = document.createElement("img")
         const bodyProductCard = document.createElement("div")
@@ -58,12 +39,11 @@ const showProducts = (products) =>{
         const titleProduct = document.createElement("h2")
         const descriptionProduct = document.createElement("p")
         const priceProduct = document.createElement("p")
-        const buttonProductPage = document.createElement("button")
-
-
+        const buttonProductPage = document.createElement("a")
 
         bodyProductCard.classList.add("bodyCard")
         containerProduct.setAttribute("class", "col-12 col-md-4 singleProductContainer")
+        cardContainerProduct.classList.add("singleCard")
         imgContainer.classList.add("containerImgProduct")
         imgProduct.setAttribute("src", product.imageUrl)
         imgProduct.setAttribute("class", "img-thumbnail")
@@ -73,10 +53,12 @@ const showProducts = (products) =>{
         descriptionProduct.innerText = product.description
         priceProduct.innerText = product.price + " €"
         buttonProductPage.innerText = "Dettagli Prodotto"
+        buttonProductPage.setAttribute("href", `./product.html?productid=${product._id}`)
 
         bodyProductCard.append(brandProduct, titleProduct, descriptionProduct, priceProduct)
         imgContainer.appendChild(imgProduct)
-        containerProduct.append(imgContainer, bodyProductCard, buttonProductPage)
+        cardContainerProduct.append(imgContainer, bodyProductCard, buttonProductPage)
+        containerProduct.appendChild(cardContainerProduct)
         productsRow.appendChild(containerProduct)
     });
 

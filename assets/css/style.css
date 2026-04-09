@@ -1,33 +1,88 @@
+/** General Style */
+::selection {
+  color: white;
+  background-color: #1aa6fb;
+}
+
+/** Style Navbar */
+
+header {
+  background-color: rgb(243, 243, 243);
+}
+
+.navbar-brand img {
+  width: 10rem;
+  height: auto;
+}
+
+/** Style for Hero Section */
+
+.hero .container {
+  padding: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  background: #1aa6fb;
+  background: linear-gradient(
+    96deg,
+    rgba(26, 166, 251, 0) 0%,
+    rgba(26, 166, 251, 0.7) 60%
+  );
+  border-radius: 2rem;
+}
+
+.buttonHero {
+  padding: 0.7rem 1rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: #1aa6fb;
+  color: white;
+  text-decoration: none;
+}
+
+.buttonHero:hover {
+  transition: background-color 0.1s ease-in-out;
+  background-color: #147bba;
+}
+
+/** Style for Section Card Products */
+
+.allProducts h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
 .allProducts {
   margin-top: 2rem;
 }
 
 .rowProducts {
-  gap: 2rem 3rem;
+  gap: 2rem 0;
 }
 
-.singleProductContainer {
+.singleCard {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 30%;
   height: 37rem;
-  padding: 3rem;
+  padding: 2rem;
   border: 1px solid rgb(208, 208, 208);
   border-radius: 1rem;
 }
 
-.singleProductContainer button {
+.singleProductContainer a {
   padding: 0.7rem 1rem;
   border-radius: 2rem;
   border: none;
-  background-color: #3868e8;
-  color: white;
+  background-color: #1aa6fb;
+  color: white !important;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
 }
 
-.singleProductContainer button:hover {
+.singleProductContainer a:hover {
   transition: background-color 0.1s ease-in-out;
-  background-color: #2955cd;
+  background-color: #147bba;
 }
 
 .containerImgProduct {
@@ -50,11 +105,58 @@
   font-size: 1.3rem;
 }
 
-.bodyCard p:first-of-type {
+.bodyCard p:first-of-type,
+.bodyCardInfo p:first-of-type {
   padding: 0.3rem 1rem;
   border-radius: 1rem;
   border: 1px solid rgb(208, 208, 208);
   width: fit-content;
   background-color: rgb(234, 234, 234);
   color: rgb(84, 83, 83);
+}
+
+/** Style for Product Page */
+
+.productInfoContainer {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.containerImgProductInfo {
+  width: 30%;
+  height: 60%;
+  overflow: hidden;
+}
+
+.imgProductInfo {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.bodyCardInfo h2 {
+  color: #1aa6fb;
+}
+
+.bodyCardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bodyCardInfo a {
+  cursor: not-allowed;
+  border-radius: 2rem;
+  color: rgb(117, 1, 1) !important;
+  border: 1px solid rgb(152, 54, 54);
+  padding: 1rem;
+  background-color: rgb(255, 123, 123);
+  width: fit-content;
+}
+
+.bodyCardInfo a::selection {
+  background: none;
+  color: rgb(117, 1, 1);
 }

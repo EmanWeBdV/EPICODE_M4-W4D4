@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EPICODE_M4-W4D4 - Homepage</title>
+    <title>EPICODE_M4-W4D4 - Product Page</title>
 
     <!-- Link Area -->
 
@@ -25,7 +25,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a aria-label="logo home" class="navbar-brand" href="#">
+                    <a aria-label="logo home" class="navbar-brand" href="./index.html">
                         <img src="./assets/img/epicode-tech-store-logo.webp" alt="logo epicode store"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -35,7 +35,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#cardMain">Prodotti</a>
@@ -52,58 +52,16 @@
 
 
     <main>
+        <div class="container">
+            <div class="row productInfo">
 
-        <section class="hero">
-            <div class="container">
-                <div class="row flex-lg-row-reverse align-items-center g-5">
-                    <div class="col-10 mx-auto col-sm-8 col-lg-6">
-                        <img src="./assets/img/device-for-hero_converted.webp" class="d-block mx-lg-auto img-fluid"
-                            alt="" loading="lazy">
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="lc-block mb-3">
-                            <div editable="rich">
-                                <h2 class="fw-bold display-5">Scopri la tecnologia giusta per te</h2>
-                            </div>
-                        </div>
-
-                        <div class="lc-block mb-3">
-                            <div editable="rich">
-                                <p class="lead">Esplora smartphone, laptop, tablet e accessori in un’esperienza
-                                    d’acquisto semplice, moderna e pensata per trovare subito ciò che cerchi.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start"><a class="buttonHero"
-                                href="#cardMain" role="button">Esplora
-                                prodotti</a>
-                            <button class="" href="#cardMain">Back Office</button>
-                        </div>
-
-                    </div>
-                </div>
             </div>
-        </section>
-
-        <section class="main" id="cardMain">
-            <div class="container allProducts">
-                <h1>Tutti i prodotti</h1>
-                <div class="row rowProducts">
-
-
-                </div>
-            </div>
-        </section>
-
+        </div>
     </main>
-
 
     <footer>
 
     </footer>
-
-
 
     <!-- Script Area -->
 
@@ -116,9 +74,7 @@
         crossorigin="anonymous"></script>
 
     <!-- Personal Script -->
-    <script type="module" src="./assets/js/index-script.js"></script>
-    <script type="module" src="./assets/js/products-import.js"></script>
-
+    <script src="./assets/js/product-page.js"></script>
 </body>
 
 </html>
