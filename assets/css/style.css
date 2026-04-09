@@ -4,6 +4,11 @@
   background-color: #1aa6fb;
 }
 
+.nav-link.active,
+.nav-link:hover {
+  color: #1aa6fb !important;
+}
+
 /** Style Navbar */
 
 header {
@@ -15,7 +20,7 @@ header {
   height: auto;
 }
 
-/** Style for Hero Section */
+/** Style for Hero Section Index */
 
 .hero .container {
   padding: 5rem;
@@ -159,4 +164,44 @@ header {
 .bodyCardInfo a::selection {
   background: none;
   color: rgb(117, 1, 1);
+}
+
+/** Style for Hero Section BackOffice */
+
+.hero .container {
+  padding: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  background: #1800a3;
+  background: linear-gradient(
+    96deg,
+    rgba(26, 166, 251, 0) 0%,
+    rgba(30, 14, 177, 0.7) 60%
+  );
+  border-radius: 2rem;
+}
+
+.back-office h2 {
+  color: rgb(45, 45, 45);
+}
+
+.buttonHeroBack {
+  background: white;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: rgb(45, 45, 45);
+  text-decoration: none;
+  border: 1px solid rgb(210, 210, 210);
+}
+
+.addProduct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  color: rgb(5, 107, 5);
+  background-color: rgb(130, 204, 130);
+  border: 1px solid green;
 }

@@ -1,4 +1,4 @@
-
+/*
 import { tokenAPI } from "./index-script.js"
 
 const products = [
@@ -270,3 +270,4 @@ const checkProduct = async (products) => {
 }
 
 checkProduct(products)
+*/
