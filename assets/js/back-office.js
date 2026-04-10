@@ -6,9 +6,17 @@ const deleteButtonProduct = document.querySelector(".cancelButtonForm")
 const confirmDeleteButton = document.querySelector(".confirmDeleteButton")
 const alertSectionForm = document.querySelector(".alert-success")
 const modalAlertDelete = document.querySelector(".modal")
+const spinner = document.querySelector(".loadingSpinner")
 let editingProductId = null
 const formSection = document.querySelector(".form")
 formSection.classList.add("d-none")
+
+
+
+const hideSpinner = () => {
+    spinner.classList.add("d-none")
+}
+
 
 const getProducts = async () =>{
     try {
@@ -125,6 +133,8 @@ const generateProductList = (products) =>{
         trProduct.append(tdPreviewProduct, tdNameProduct, tdBrandProduct, tdDescriptionProduct, tdPriceProduct, tdActionsProduct)
   
         tbodyListProductBO.appendChild(trProduct)
+
+        hideSpinner()
     })
 }
 

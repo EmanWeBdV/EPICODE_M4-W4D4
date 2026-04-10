@@ -4,6 +4,13 @@
 export const tokenAPI = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWQ1NDM3NGJhMGYxMjAwMTUyZTc3NmIiLCJpYXQiOjE3NzU1ODQxMTYsImV4cCI6MTc3Njc5MzcxNn0.IJzM3lyFfQC9wLFlzv2bE1mbyIVPGWi7N4shdrUZE5w"
 
 const productsRow = document.querySelector(".rowProducts")
+const spinner = document.querySelector(".loadingSpinner")
+
+
+
+const hideSpinner = () => {
+    spinner.classList.add("d-none")
+}
 
 
 const getProducts = async () =>{
@@ -59,6 +66,8 @@ const generateCardProduct = (products) =>{
         cardContainerProduct.append(imgContainer, bodyProductCard, buttonProductPage)
         containerProduct.appendChild(cardContainerProduct)
         productsRow.appendChild(containerProduct)
+
+        hideSpinner()
     });
 }
 
