@@ -54,6 +54,15 @@ header {
   background-color: #147bba;
 }
 
+.backOfficeButtonHero {
+  padding: 0.7rem 1rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: #ececec;
+  color: rgb(26, 26, 26);
+  text-decoration: none;
+}
+
 /** Style for Section Card Products */
 
 .allProducts h1 {
