@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/EmanWeBdV/EPICODE_M4-W4D4">
-    <img src="./assets/preview.png" alt="Preview" width="140">
+    <img src="./assets/img/epicode-tech-store-logo.webp" alt="Logo" width="140">
   </a>
 </p>
 
@@ -39,7 +39,7 @@
 ## ✨ Preview
 
 <p align="center">
-  <img src="./assets/img/previw-page.jpg" alt="Preview" width="900">
+  <img src="./assets/img/preview-page.jpg" alt="Preview" width="900">
 </p>
 
 ---
