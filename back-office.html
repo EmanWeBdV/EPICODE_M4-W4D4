@@ -56,6 +56,7 @@
 
     <main>
 
+
         <section class="hero back-office">
             <div class="container back-office">
                 <div class="row flex-lg-row-reverse align-items-center g-5">
@@ -73,7 +74,7 @@
                         <div class="lc-block mb-3">
                             <div editable="rich">
                                 <p class="lead">Gestisci i prodotti del catalogo, aggiungi nuovi articoli, modifica
-                                    quelli esistenti o rimuovili dal database..
+                                    quelli esistenti o rimuovili dal database.
                                 </p>
                             </div>
                         </div>
@@ -89,9 +90,145 @@
                 </div>
             </div>
         </section>
+        <section class="form">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <form action="" method="post" class="formProduct">
 
+                            <button type="button" class="btn-close formClose" aria-label="Close"></button>
+                            <h2 class="titleForm"></h2>
+                            <p>Compila tutti i campi presenti in questo form e clicca su Invia per inoltrarli al server.
+                            </p>
+
+                            <div class="inputData">
+
+                                <div class="nameInputContainer">
+
+                                    <label for="name-product">Nome del prodotto <p>*Campo obbligatorio</p></label>
+                                    <input type="text" name="name-product" id="name-product"
+                                        placeholder="Es. Computer 45L..." required>
+                                </div>
+
+                                <div class="brandInputContainer">
+
+                                    <label for="brand-product">Brand del prodotto <p>*Campo obbligatorio</p></label>
+                                    <input type="text" name="brand-product" id="brand-product"
+                                        placeholder="Es. Apple, Samsung..." required>
+                                </div>
+
+                                <div class="descriptionInputContainer">
+
+                                    <label for="description-product">Breve descrizione del prodotto <p>*Campo
+                                            obbligatorio</p>
+                                    </label>
+                                    <input type="text" name="description-product" id="description-product"
+                                        placeholder="Es. Processore, RAM..." required>
+                                </div>
+
+                                <div class="priceInputContainer">
+
+                                    <label for="price-product">Prezzo del prodotto <p>*Campo obbligatorio</p></label>
+                                    <input type="number" name="price-product" id="price-product"
+                                        placeholder="Es. 189, 68, 39..." required>
+                                </div>
+
+                                <div class="imageUrlInputContainer">
+
+                                    <label for="image-product">URL immagine del prodotto <p>*Campo obbligatorio</p>
+                                    </label>
+                                    <input type="text" name="image-product" id="image-product"
+                                        placeholder="Es. https://www.unsplash.com/image..." required>
+                                </div>
+                            </div>
+
+                            <div class="buttonForm">
+                                <button type="button" class="cancelButtonForm"><i class="material-icons"><span
+                                            class="material-symbols-outlined">delete</span></i> Annulla</button>
+                                <button type="submit" class="submitFormButton"><span class="material-symbols-outlined">
+                                        check
+                                    </span> Invia</button>
+                                <button type="submit" class="editButtonForm d-none"><span
+                                        class="material-symbols-outlined">
+                                        check
+                                    </span> Applica modifiche</button>
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="alertsForm">
+            <div class="container containerAlertsForm">
+                <div class="row rowAlertsForm">
+                    <div class="col successAlert">
+                        <div class="alert alert-success d-none" role="alert">
+                            Testo
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="tableProductSection">
+            <div class="container">
+                <div class="title">
+                    <h3>Lista prodotti</h3>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">Anteprima</th>
+                                        <th>Nome Prodotto</th>
+                                        <th>Brand</th>
+                                        <th>Descrizione</th>
+                                        <th>Prezzo</th>
+                                        <th>Azioni</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="bodyTable">
+
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="warningIcon">
+                        <span class="material-symbols-outlined">
+                            warning
+                        </span>
+                    </div>
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Vuoi eliminare questo prodotto?</h1>
+                </div>
+                <div class="modal-body">
+                    Cliccando su "Elimina" il prodotto verrà eliminato dal server e non sarà più recuperabile!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="cancelOperationDeleteButton" data-bs-dismiss="modal">Annulla</button>
+                    <button type="button" class="confirmDeleteButton" data-bs-dismiss="modal">Elimina</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Script Area -->
@@ -105,7 +242,7 @@
         crossorigin="anonymous"></script>
 
     <!-- Personal Script -->
-    <script type="module" src="./assets/js/index-script.js"></script>
+    <script type="module" src="./assets/js/back-office.js"></script>
 </body>
 
 </html>
